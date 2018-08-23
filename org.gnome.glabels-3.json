@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.glabels-3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.26",
+    "runtime-version": "3.28",
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
@@ -11,6 +11,7 @@
     "finish-args": [
         "--share=ipc", "--socket=x11",
         "--socket=wayland",
+        "--filesystem=home",
         "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
         "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
@@ -129,7 +130,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/jimevins/glabels.git",
-                    "commit": "a391634d7efa143987c6f37204c7543bac67f03f"
+                    "commit": "a6ba9388d9d22ca7be68c03a199f89725228a72f"
                 }
             ]
         }
