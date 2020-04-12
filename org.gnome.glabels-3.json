@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.glabels-3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.28",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
@@ -12,13 +12,8 @@
         "--share=ipc", "--socket=x11",
         "--socket=wayland",
         "--filesystem=home",
-        "--filesystem=xdg-run/dconf", "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf", "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--metadata=X-DConf=migrate-path=/org/gnome/glabels-3/"
     ],
-    "build-options" : {
-        "cflags": "-O2 -g",
-        "cxxflags": "-O2 -g"
-    },
     "cleanup": [
         "/include",
         "/lib/atkmm*", "/lib/cairomm*", "/lib/gdkmm*", "/lib/giomm*", "/lib/glibmm*", "/lib/gtkmm*", "/lib/pangomm*", "/lib/pkgconfig", "/lib/sigc++*",
@@ -26,6 +21,7 @@
         "*.la", "*.a"
     ],
     "modules": [
+        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "sigc++",
             "sources": [
@@ -41,8 +37,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.54/glibmm-2.54.1.tar.xz",
-                    "sha256": "7cc28c732b04d70ed34f0c923543129083cfb90580ea4a2b4be5b38802bf6a4a"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/glibmm/2.64/glibmm-2.64.2.tar.xz",
+                    "sha256": "a75282e58d556d9b2bb44262b6f5fb76c824ac46a25a06f527108bec86b8d4ec"
                 }
             ]
         },
@@ -61,8 +57,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/pangomm/2.40/pangomm-2.40.1.tar.xz",
-                    "sha256": "9762ee2a2d5781be6797448d4dd2383ce14907159b30bc12bf6b08e7227be3af"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/pangomm/2.42/pangomm-2.42.1.tar.xz",
+                    "sha256": "14bf04939930870d5cfa96860ed953ad2ce07c3fd8713add4a1bfe585589f40f"
                 }
             ]
         },
@@ -71,8 +67,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/atkmm/2.24/atkmm-2.24.2.tar.xz",
-                    "sha256": "ff95385759e2af23828d4056356f25376cfabc41e690ac1df055371537e458bd"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/atkmm/2.28/atkmm-2.28.0.tar.xz",
+                    "sha256": "4c4cfc917fd42d3879ce997b463428d6982affa0fb660cafcc0bc2d9afcedd3a"
                 }
             ]
         },
@@ -81,8 +77,18 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://ftp.gnome.org/pub/GNOME/sources/gtkmm/3.22/gtkmm-3.22.2.tar.xz",
-                    "sha256": "91afd98a31519536f5f397c2d79696e3d53143b80b75778521ca7b48cb280090"
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/gtkmm/3.24/gtkmm-3.24.2.tar.xz",
+                    "sha256": "6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3"
+                }
+            ]
+        },
+        {
+            "name": "gnome-common",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://ftp.gnome.org/pub/GNOME/sources/gnome-common/3.18/gnome-common-3.18.0.tar.xz",
+                    "sha256": "22569e370ae755e04527b76328befc4c73b62bfd4a572499fde116b8318af8cf"
                 }
             ]
         },
@@ -113,8 +119,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/zint/zint/2.6.3/zint-2.6.3.src.tar.gz",
-                    "sha256": "adcaebeb2931163a567073644c8e7952430ea31e08060363432d77cc599318d8"
+                    "url": "https://downloads.sourceforge.net/project/zint/zint/2.8.0/zint-2.8.0.tar.gz",
+                    "sha256": "0abb92df28e61dd3efb2bcaf324588ff77e5037cac7bb7098b8da814e622639c"
                 }
             ]
         },
@@ -131,6 +137,10 @@
                     "type": "git",
                     "url": "https://github.com/jimevins/glabels.git",
                     "commit": "a6ba9388d9d22ca7be68c03a199f89725228a72f"
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata.patch"
                 }
             ]
         }
