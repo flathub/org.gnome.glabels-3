@@ -18,7 +18,7 @@ index 669927a..b39ba6f 100644
 -    <screenshot height="640" width="881" type="default">
 -      <image>http://glabels.org/images/320-screenshot-main.png</image>
 +    <screenshot type="default" height="640" width="881">
-+      <image>https://github.com/hfiguiere/org.gnome.glabels-3/raw/gnome40/320-screenshot-main.png</image>
++      <image>https://raw.githubusercontent.com/flathub/org.gnome.glabels-3/master/320-screenshot-main.png</image>
      </screenshot>
    </screenshots>
 @@ -34,4 +34,14 @@
