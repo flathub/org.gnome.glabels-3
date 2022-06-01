@@ -29,10 +29,4 @@ index 669927a..b39ba6f 100644
 +    <release date="2018-04-28" version="3.4.1"/>
 +  </releases>
 +  <content_rating type="oars-1.1" />
-+
-+  <!--FIXME: this is a translatable version of project_group-->
-+  <_developer_name>The GNOME Project</_developer_name>
-+
-+  <!--FIXME: where to submit translations-->
-+  <url type="translate">https://wiki.gnome.org/TranslationProject</url>
  </component>
