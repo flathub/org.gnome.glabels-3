@@ -21,7 +21,7 @@ index 669927a..b39ba6f 100644
 +      <image>https://raw.githubusercontent.com/flathub/org.gnome.glabels-3/master/320-screenshot-main.png</image>
      </screenshot>
    </screenshots>
-@@ -34,4 +34,14 @@
+@@ -34,4 +34,8 @@
    <update_contact>evins_at_snaught.com</update_contact>
    <project_group>GNOME</project_group>
    <translation type="gettext">glabels-3.0</translation>
