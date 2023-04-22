@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.glabels-3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
@@ -9,16 +9,29 @@
     "rename-icon": "glabels-3.0",
     "copy-icon": true,
     "finish-args": [
-        "--share=ipc", "--socket=x11",
+        "--share=ipc",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/org/gnome/glabels-3/"
     ],
     "cleanup": [
         "/include",
-        "/lib/atkmm*", "/lib/cairomm*", "/lib/gdkmm*", "/lib/giomm*", "/lib/glibmm*", "/lib/gtkmm*", "/lib/pangomm*", "/lib/pkgconfig", "/lib/sigc++*",
-        "/share/devhelp", "/share/doc", "/share/gtk-doc", "/share/man",
-        "*.la", "*.a"
+        "/lib/atkmm*",
+        "/lib/cairomm*",
+        "/lib/gdkmm*",
+        "/lib/giomm*",
+        "/lib/glibmm*",
+        "/lib/gtkmm*",
+        "/lib/pangomm*",
+        "/lib/pkgconfig",
+        "/lib/sigc++*",
+        "/share/devhelp",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "*.la",
+        "*.a"
     ],
     "modules": [
         "shared-modules/intltool/intltool-0.51.json",
