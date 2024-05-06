@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.glabels-3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
