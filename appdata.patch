@@ -1,17 +1,21 @@
-From 9a8a500ecb31efd68eb854dd38fa6b4c7bf53448 Mon Sep 17 00:00:00 2001
-From: Nick Richards <nick@nedrichards.com>
-Date: Sun, 12 Apr 2020 12:30:31 +0100
-Subject: [PATCH] update appdata to flathub standards
-
----
- data/appdata/glabels-3.appdata.xml.in | 12 +++++++++++-
- 1 file changed, 11 insertions(+), 1 deletion(-)
-
-diff --git a/data/appdata/glabels-3.appdata.xml.in b/data/appdata/glabels-3.appdata.xml.in
-index 669927a..b39ba6f 100644
 --- a/data/appdata/glabels-3.appdata.xml.in
 +++ b/data/appdata/glabels-3.appdata.xml.in
-@@ -23,7 +23,7 @@
+@@ -2,10 +2,13 @@
+ <!-- Copyright 2013 Jim Evins <evins@snaught.com> -->
+ <component type="desktop">
+   <id>glabels-3.0.desktop</id>
++  <developer id="com.snaught">
++    <name>Jim Evins</name>
++  </developer>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-3.0+</project_license>
+   <_name>gLabels</_name>
+-  <_summary>Create labels, business cards and media covers</_summary>
++  <_summary>Create labels and business cards</_summary>
+   <description>
+     <_p>
+       gLabels is a program for creating labels and business cards. It is
+@@ -23,8 +26,9 @@
      </_p>
    </description>
    <screenshots>
@@ -19,9 +23,11 @@ index 669927a..b39ba6f 100644
 -      <image>http://glabels.org/images/320-screenshot-main.png</image>
 +    <screenshot type="default" height="640" width="881">
 +      <image>https://raw.githubusercontent.com/flathub/org.gnome.glabels-3/master/320-screenshot-main.png</image>
++      <caption>gLabels main window</caption>
      </screenshot>
    </screenshots>
-@@ -34,4 +34,8 @@
+   <url type="homepage">http://glabels.org/</url>
+@@ -34,4 +38,9 @@
    <update_contact>evins_at_snaught.com</update_contact>
    <project_group>GNOME</project_group>
    <translation type="gettext">glabels-3.0</translation>
@@ -29,4 +35,5 @@ index 669927a..b39ba6f 100644
 +    <release date="2018-04-28" version="3.4.1"/>
 +  </releases>
 +  <content_rating type="oars-1.1" />
++  <launchable type="desktop-id">glabels-3.0.desktop</launchable>
  </component>
