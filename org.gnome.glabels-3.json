@@ -5,8 +5,8 @@
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
-    "rename-desktop-file": "glabels-3.0.desktop",
-    "rename-icon": "glabels-3.0",
+    "rename-desktop-file": "glabels-3.desktop",
+    "rename-icon": "glabels-3",
     "copy-icon": true,
     "finish-args": [
         "--share=ipc",
