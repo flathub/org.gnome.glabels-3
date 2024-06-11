@@ -14,7 +14,7 @@
     </p>
   </description>
   <screenshots>
-  	<screenshot type="default">
+    <screenshot type="default">
       <image type="source">https://github.com/jimevins/glabels-qt/raw/master/docs/images/cover-image.png</image>
       <caption>Main screen</caption>
     </screenshot>
