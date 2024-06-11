@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.gnome.glabels-3</id>
+  <launchable type="desktop-id">org.gnome.glabels-3.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-only</project_license>
+  <developer_name>Jim Evins</developer_name>
+  <name>gLabels</name>
+  <summary>gLabels Label Designer (Qt/C++)</summary>
+  <description>
+    <p>
+    	gLabels is a powerful tool for editing and printing all kinds of labels.
+      It comes with a lot of templates of standard labels.
+    </p>
+  </description>
+  <screenshots>
+  	<screenshot type="default">
+      <image type="source">https://github.com/jimevins/glabels-qt/raw/master/docs/images/cover-image.png</image>
+      <caption>Main screen</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">http://glabels.org/</url>
+  <update_contact>evins_at_snaught.com</update_contact>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="3.99+master564" date="2021-02-06">
+      <url>https://github.com/jimevins/glabels-qt/releases/tag/glabels-3.99-master564</url>
+    </release>
+    <release version="3.4.1" date="2018-04-28">
+    </release>
+  </releases>
+</component>
