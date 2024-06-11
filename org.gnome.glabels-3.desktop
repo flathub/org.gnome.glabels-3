@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=gLabels
+GenericName=Label Editing and Printing Tool
+Comment=gLabels is a powerful tool for editing and printing all kinds of labels.
+Exec=glabels-3 %F
+Icon=org.gnome.glabels-3
+Terminal=false
+Type=Application
+MimeType=;
+Categories=Office;
+Keywords=;
+StartupNotify=false
