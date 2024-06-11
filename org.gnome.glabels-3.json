@@ -40,8 +40,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libsigc++/2.10/libsigc++-2.10.0.tar.xz",
-                    "sha256": "f843d6346260bfcb4426259e314512b99e296e8ca241d771d21ac64f28298d81"
+                    "url": "https://download.gnome.org/sources/libsigc++/3.6/libsigc++-3.6.0.tar.xz",
+                    "sha256": "c3d23b37dfd6e39f2e09f091b77b1541fbfa17c4f0b6bf5c89baef7229080e17"
                 }
             ]
         },
@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/glibmm/2.64/glibmm-2.64.2.tar.xz",
-                    "sha256": "a75282e58d556d9b2bb44262b6f5fb76c824ac46a25a06f527108bec86b8d4ec"
+                    "url": "https://download.gnome.org/sources/glibmm/2.9/glibmm-2.9.1.tar.gz",
+                    "sha256": "e742eadeed533435959f62533d1caf4f79081189b803a097f6232cb3d2ced773"
                 }
             ]
         },
@@ -60,8 +60,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/cairomm/1.12/cairomm-1.12.0.tar.xz",
-                    "sha256": "a54ada8394a86182525c0762e6f50db6b9212a2109280d13ec6a0b29bfd1afe6"
+                    "url": "https://download.gnome.org/sources/cairomm/1.15/cairomm-1.15.4.tar.xz",
+                    "sha256": "4cd9fd959538953dfa606aaa7a31381e3193eebf14d814d97ef928684ee9feb5"
                 }
             ]
         },
@@ -74,8 +74,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/pangomm/2.46/pangomm-2.46.2.tar.xz",
-                    "sha256": "57442ab4dc043877bfe3839915731ab2d693fc6634a71614422fb530c9eaa6f4"
+                    "url": "https://download.gnome.org/sources/pangomm/2.52/pangomm-2.52.0.tar.xz",
+                    "sha256": "34a134126a6484ff12f774358c36ecc44d0e9df094e1b83796d9774bb7d24947"
                 }
             ]
         },
@@ -84,8 +84,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/atkmm/2.28/atkmm-2.28.0.tar.xz",
-                    "sha256": "4c4cfc917fd42d3879ce997b463428d6982affa0fb660cafcc0bc2d9afcedd3a"
+                    "url": "https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.3.tar.xz",
+                    "sha256": "6ec264eaa0c4de0adb7202c600170bde9a7fbe4d466bfbe940eaf7faaa6c5974"
                 }
             ]
         },
@@ -94,8 +94,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtkmm/3.24/gtkmm-3.24.2.tar.xz",
-                    "sha256": "6d71091bcd1863133460d4188d04102810e9123de19706fb656b7bb915b4adc3"
+                    "url": "https://download.gnome.org/sources/gtkmm/4.14/gtkmm-4.14.0.tar.xz",
+                    "sha256": "9350a0444b744ca3dc69586ebd1b6707520922b6d9f4f232103ce603a271ecda"
                 }
             ]
         },
@@ -129,8 +129,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fukuchi.org/works/qrencode/qrencode-4.0.0.tar.bz2",
-                    "sha256": "c90035e16921117d4086a7fdee65aab85be32beb4a376f6b664b8a425d327d0b"
+                    "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.1.1.tar.gz",
+                    "sha256": "5385bc1b8c2f20f3b91d258bf8ccc8cf62023935df2d2676b5b67049f31a049c"
                 }
             ]
         },
@@ -140,8 +140,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://downloads.sourceforge.net/project/zint/zint/2.8.0/zint-2.8.0.tar.gz",
-                    "sha256": "0abb92df28e61dd3efb2bcaf324588ff77e5037cac7bb7098b8da814e622639c"
+                    "url": "https://downloads.sourceforge.net/projects/zint/files/zint/2.13.0/zint-2.13.0-src.tar.gz",
+                    "sha256": "0e957cf17c3eeb4ad619b2890d666d12a5c7adc7e7c39c207739b0f4f5c65fa2"
                 }
             ]
         },
@@ -155,18 +155,9 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://github.com/jimevins/glabels.git",
-                    "tag": "glabels-3_4_1",
-                    "commit": "a6ba9388d9d22ca7be68c03a199f89725228a72f"
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "glabels-fixes.patch"
+                    "type": "archive",
+                    "url": "https://github.com/jimevins/glabels-qt/archive/refs/tags/glabels-3.99-master564.tar.gz",
+                    "sha256": "22806961037edf9a419ef7c7b00c8c9c8d230bdfa4267c40aa3ee9bc7160bdd4"
                 }
             ]
         }
