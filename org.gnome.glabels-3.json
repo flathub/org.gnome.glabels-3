@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.glabels-3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "glabels-3",
     "rename-appdata-file": "glabels-3.appdata.xml",
@@ -126,17 +126,23 @@
         {
             "name": "libqrencode",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://fukuchi.org/works/qrencode/qrencode-4.0.0.tar.bz2",
-                    "sha256": "c90035e16921117d4086a7fdee65aab85be32beb4a376f6b664b8a425d327d0b"
+                    "url": "https://github.com/fukuchi/libqrencode/archive/refs/tags/v4.0.0.tar.gz",
+                    "sha256": "c2c8a8110354463a3332cb48abf8581c8d94136af4dc1418f891cc9c7719e3c1"
                 }
             ]
         },
         {
             "name": "zint",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -147,12 +153,9 @@
         },
         {
             "name": "glabels",
-            "post-install": [
-                "for size in 64 128; do
-                   rsvg-convert -w $size -h $size -f png -o $size.png /app/share/icons/hicolor/scalable/apps/glabels-3.0.svg
-                   install -Dm644 $size.png /app/share/icons/hicolor/${size}x${size}/apps/org.gnome.glabels-3.png
-                 done"
-            ],
+            "build-options": {
+                "cflags": "-std=gnu18 -Wno-error=incompatible-pointer-types"
+            },
             "sources": [
                 {
                     "type": "git",
